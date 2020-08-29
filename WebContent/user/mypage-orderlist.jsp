@@ -208,21 +208,14 @@ function openPopup(orderNo, event, productNo){
 		
 			var imageRoot = "";
 			console.log("orderDto",orderDto);
-			for(var i = 0; i < orderDto.length; i++){
-			//	document.querySelector("#name").textContent=orderDto[i].name;
-			//	document.querySelector("#price").textContent=orderDto[i].price;
-			//	document.querySelector("#amount").textContent=orderDto[i].orderProductAmount;
-			//	document.querySelector("#date").textContent=orderDto[i].regDate;
-				
+			for(var i = 0; i < orderDto.length; i++){				
 				var imagePath = "";
 				if(orderDto[i].category == "CAKE"){
 					imagePath = "../image/CAKE/"+orderDto[i].imagePath;
 				} else {
 					imagePath = "../image/ICECREAM/"+orderDto[i].imagePath;
 				}
-			//	document.querySelector("#images-2").src=imageRoot+orderDto[i].imagePath;
-		
-				
+						
 				var innerhtml='<div class="col-2">'
 							  +'<img class="img-thumbnail" src="'+imagePath+'" class=""alt=""style="">'
 							  +'</div>'
